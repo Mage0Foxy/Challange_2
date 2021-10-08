@@ -129,12 +129,13 @@ h4 {
 .p-info {
 	color: black;
 	font-family: 'Courier New', monospace;
-	font-style: italic;
+	<!-- font-style: italic; -->
 	font-size: 18px;
 	font-weight: bold;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	margin-left: 10px
 }
 
 
@@ -312,29 +313,53 @@ h4 {
 
 
 
-
-
-.gallery {
-  margin: 5px;
-  float: left;
-  width: 180px;
+.squareF {
+	align-items: center;
+  	justify-content: center;
+    width: 60%;
+    height: 400px;
+    margin: auto;
+    margin-right: 95px;
+    background: #c4a9cd;
+    border-radius: 10px;
+    opacity: 0;
+    transform: scale(1.2);
 }
 
-.gallery:hover {
-  border: 1px solid #777;
+@media (prefers-reduced-motion: no-preference) {
+  .squareF {
+    transition: opacity 2s ease, transform 2s ease;
+  }
 }
 
-.gallery img {
-  width: 100%;
-  height: auto;
-}
-
-.desc {
-  padding: 15px;
-  text-align: center;
+.squareF-transition {
+    opacity: 1;
+    transform: none;
 }
 
 
+.squareG {
+	align-items: center;
+  	justify-content: center;
+    width: 60%;
+    height: 500px;
+    margin-left: 95px;
+    background: #c4a9cd;
+    border-radius: 10px;
+    opacity: 0;
+    transform: scale(1.2);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .squareG {
+    transition: opacity 2s ease, transform 2s ease;
+  }
+}
+
+.squareG-transition {
+    opacity: 1;
+    transform: none;
+}
 
 
 

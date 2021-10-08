@@ -1,5 +1,5 @@
 html {
-	background: url('file:///C:/Users/NovaFoxy/Desktop/school%20projects/challange%202/main%20page/About%20me/pic/Witcher.png') no-repeat;
+	background: url('file:///C:/Users/NovaFoxy/Desktop/school%20projects/challange%202/main%20page/About%20me/pic/Witcher.png') no-repeat;<!-- Image of kleur achtergrond keuze -->
 	background-repeat: no-repeat;
 	background-size: 100%;
 	height: 100%;
@@ -129,12 +129,13 @@ h4 {
 .p-info {
 	color: black;
 	font-family: 'Courier New', monospace;
-	font-style: italic;
-	font-size: 15px;
+	
+	font-size: 16px;
 	font-weight: bold;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	margin-left: 10px
 }
 
 
@@ -311,28 +312,76 @@ h4 {
 }
 
 
-
-
-
-
-
-
-.gallery {
-  margin: 5px;
-  float: left;
-  width: 180px;
+.squareF {
+	align-items: center;
+  	justify-content: center;
+    width: 60%;
+    height: 400px;
+    margin: auto;
+    margin-right: 95px;
+    background: #c4a9cd;
+    border-radius: 10px;
+    opacity: 0;
+    transform: scale(1.2);
 }
 
-.gallery:hover {
-  border: 1px solid #777;
+@media (prefers-reduced-motion: no-preference) {
+  .squareF {
+    transition: opacity 2s ease, transform 2s ease;
+  }
 }
 
-.gallery img {
-  width: 100%;
-  height: auto;
+.squareF-transition {
+    opacity: 1;
+    transform: none;
 }
 
-.desc {
-  padding: 15px;
-  text-align: center;
+
+.squareG {
+	align-items: center;
+  	justify-content: center;
+    width: 60%;
+    height: 500px;
+    margin-left: 95px;
+    background: #c4a9cd;
+    border-radius: 10px;
+    opacity: 0;
+    transform: scale(1.2);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .squareG {
+    transition: opacity 2s ease, transform 2s ease;
+  }
+}
+
+.squareG-transition {
+    opacity: 1;
+    transform: none;
+}
+
+
+
+.squareH {
+	align-items: center;
+  	justify-content: center;
+    width: 60%;
+    height: 500px;
+    margin: auto;
+    margin-right: 95px;
+    background: #c4a9cd;
+    border-radius: 10px;
+    opacity: 0;
+    transform: scale(1.2);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .squareH {
+    transition: opacity 2s ease, transform 2s ease;
+  }
+}
+
+.squareH-transition {
+    opacity: 1;
+    transform: none;
 }
